@@ -8,3 +8,10 @@ for (let i = 0; i < (16*16); i++) {
   container.appendChild(box);
 }
 
+const boxes = Array.from(document.querySelectorAll('.box'))
+boxes.forEach((box) => {
+  box.addEventListener('mouseenter', (e) => {
+    e.target.style.backgroundColor = '#1e1e1e'
+  })
+})
+
